@@ -1,0 +1,30 @@
+.container {
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.user-container {
+  padding: 20px 20px 0 0;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress {
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: white;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: 00a99d;
+}

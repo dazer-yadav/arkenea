@@ -1,0 +1,15 @@
+<div class="container">
+  <app-shared-header heading="Progress"></app-shared-header>
+  <!-- <mat-progress-bar mode="determinate" value="40"></mat-progress-bar> -->
+  <progress class="progress" max="100" [value]="usersAdded"></progress>
+  <div class="user-container">
+    <div class="user">
+      <h3>Male Users:</h3>
+      <p>{{ usersGender.male }}</p>
+    </div>
+    <div class="user">
+      <h3>Female Users:</h3>
+      <p>{{ usersGender.female }}</p>
+    </div>
+  </div>
+</div>

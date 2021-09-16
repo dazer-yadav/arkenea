@@ -1,0 +1,59 @@
+<div class="container-user-add-edit">
+  <div class="heading">
+    <h3>Edit User</h3>
+    <p>
+      <i class="material-icons" (click)="onNoClick()" style="cursor: pointer"
+        >close</i
+      >
+    </p>
+  </div>
+  <hr />
+  <form [formGroup]="form" autocomplete="off">
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="name" placeholder="Name" />
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>EmailAddress</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="email"
+          placeholder="Enter email address..."
+        />
+      </mat-form-field>
+    </div>
+    <div class="form-group radio-buttons">
+      <label for="gender">Gender</label>
+      <mat-radio-group id="gender=" name="gender" formControlName="gender">
+        <mat-radio-button value="Male">Male</mat-radio-button>
+        <mat-radio-button value="Female">Female</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Date of Birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dob" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <input
+          matInput
+          type="textarea"
+          formControlName="address"
+          placeholder="Enter email address..."
+        />
+      </mat-form-field>
+    </div>
+    <div class="btn-div">
+      <div class="button" (click)="onSubmit()">Submit</div>
+    </div>
+  </form>
+</div>

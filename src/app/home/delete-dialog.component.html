@@ -1,0 +1,14 @@
+<div class="container-delete">
+  <div class="heading">
+    <h3>Delete User</h3>
+    <p><i class="material-icons">close</i></p>
+  </div>
+  <hr />
+  <div class="text-body">
+    <p>Are you sure you want to delete {{ data.name }}?</p>
+    <div class="buttons-right">
+      <div class="button" (click)="onNoClick()">No</div>
+      <div class="button" (click)="onDelete()">Yes</div>
+    </div>
+  </div>
+</div>
